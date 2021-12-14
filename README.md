@@ -85,8 +85,6 @@ ERPNext开箱即用，主要包括以下功能
 4. 新功能
 
 4.1 单据级打印格式自动默认，标准功能只支持按单据类型自动默认打印格式，新功能中在打印格式中增加了设为默认格式的条件和优先级两个字段，允许用户通过Python表达式为满足条件的单据分派默认的打印格式，如按不同的物料移动类型创建相应的打印格式。
- 
-本人在discuss.erpnext.com及github.com官网帐号是szufisher
 
 使用方法
 
@@ -97,7 +95,7 @@ ERPNext开箱即用，主要包括以下功能
 1.新安装
 1.1、获取对应版本APP
 
-bench get-app https://gitee.com/yuzelin/erpnext_oob.git
+bench get-app https://github.com/osmondliu95/erpnext_oob
 
 1.2、安装APP(有多个站点且未设默认站点的请加--site参数）
 
