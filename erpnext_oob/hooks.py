@@ -100,7 +100,7 @@ fixtures = [
 
 app_include_js = "/assets/js/erpnext_oob.min.js"
 page_js = {
-	"permission-manager": "public/js/hooks/page/permission_manager.js",
+#   "permission-manager": "public/js/hooks/page/permission_manager.js",
     "dashboard-view": "public/js/hooks/page/dashboard.js",
     "print": "public/js/hooks/page/print.js"
 }
