@@ -12,6 +12,7 @@ def get_coa(doctype, parent, is_root = False, chart=None):
     parent = None if parent==_('All Accounts') else parent
     if chart == '中国会计科目表':
         data = get_chart_data_from_csv()
+	print(data)
 	forest = build_forest(data)
         accounts = build_tree_from_json('dummy',chart_data=forest)
     else:    
