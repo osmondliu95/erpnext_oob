@@ -11,7 +11,9 @@ def get_coa(doctype, parent, is_root = False, chart=None):
     frappe.flags.chart = chart
     parent = None if parent==_('All Accounts') else parent
     if chart == '中国会计科目表':
-        forest = get_chart_data_from_csv()
+        data = get_chart_data_from_csv()
+        frappe.local.flags.ignore_root_company_validation = True
+	    forest = build_forest(data)
         accounts = build_tree_from_json('dummy',chart_data=forest)
     else:    
         accounts = build_tree_from_json(chart) # returns alist of dict in a tree render-able form
