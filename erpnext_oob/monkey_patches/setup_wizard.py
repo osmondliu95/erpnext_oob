@@ -1,10 +1,14 @@
 import frappe
 from frappe import _
+from erpnext.accounts.doctype.chart_of_accounts_importer.chart_of_accounts_importer import (
+		unset_existing_data,build_forest
+	)
 from erpnext_oob.localize.localize import get_chart_data_from_csv
 import erpnext
 
 @frappe.whitelist()
 def get_coa(doctype, parent, is_root = False, chart=None):
+	
     from erpnext.accounts.doctype.account.chart_of_accounts.chart_of_accounts import build_tree_from_json
     # add chart to flags to retrieve when called from expand all function
     chart = chart if chart else frappe.flags.chart
@@ -12,7 +16,6 @@ def get_coa(doctype, parent, is_root = False, chart=None):
     parent = None if parent==_('All Accounts') else parent
     if chart == '中国会计科目表':
         data = get_chart_data_from_csv()
-	print(data)
 	forest = build_forest(data)
         accounts = build_tree_from_json('dummy',chart_data=forest)
     else:    
