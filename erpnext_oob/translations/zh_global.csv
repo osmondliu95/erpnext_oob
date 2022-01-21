@@ -1095,3 +1095,26 @@ In this step we will create a **Supplier**. If you have already created a **Supp
 Show Users,显示用户
 Allowed Items,可交易物料
 Print Style Name,打印样式名称
+Create a Sales Item,新增一个销售物料
+Update Existing Price List Rate,更新现有价目表费率
+View Chart of Accounts,查看科目表
+Show Tour,显示表单访问
+Workspace,工作空间
+Chats,聊天
+Search conversation,搜索聊天会话
+New Chat Room,新建聊天室
+Enable Message Tone,启用消息提醒
+Enable Notifications,启用通知
+Chat With Us,联系我们
+"We make it simple to connect with us. Ask us anything, or share your feedback.","欢迎联系我们,您可以留下任何疑问和需求."
+"We are offline","当前我们处于非工作时间"
+"Just drop a message and we will get back to you soon","请留言,我们将尽快回复您"
+Start Conversation,开启聊天
+"Share your queries or comments here.","在这里分享您的疑问或者需求"
+"Full Name","姓名"
+"Please enter your full name","请输入您的姓名"
+"Message","消息"
+"Please enter your message","请输入您的消息"
+"Email Address","电子邮箱"
+"Please enter your email","请输入您的邮箱"
+"Submit","提交"
